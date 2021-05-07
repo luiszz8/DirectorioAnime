@@ -1,0 +1,61 @@
+.animeGrid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill,235px);
+    gap: 40px;
+    padding: 40px;
+    justify-content: center;
+    border-radius: 20px;
+    background-color: orange;
+    margin-left: 10%;
+    margin-right: 5%;
+}
+
+@media (max-width: 560px) {
+    .animeGrid{
+        grid-template-columns: 100%;   
+        margin-left: 10%;
+    }
+}
+
+.animeComplete {
+    display: grid;
+    grid-template-columns: repeat(auto-fill,235px);
+    gap: 40px;
+    padding: 40px;
+    justify-content: center;
+    border-radius: 20px;
+    background-color: orange;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+@media (max-with: 560px) {
+    .animeComplete{
+        grid-template-columns: 100%;   
+    }
+}
+
+.contenerBoutton {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;   
+    gap: 10px;
+}
+
+.estiloBoton {
+    text-decoration: none;
+    width: 200px;
+    padding: 10px;
+    font-weight: 600;
+    font-size: 20px;
+    color: #ffffff;
+    background-color: black;
+    border-radius: 6px;
+    border: 2px solid orange;
+}
+
+.estiloBoton:hover {
+    color: gray;
+    background-color: #ffffff;
+}

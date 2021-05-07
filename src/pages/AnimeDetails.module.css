@@ -1,0 +1,25 @@
+ .detailsContainer {
+     display: flex;
+     justify-content: center;
+     flex-wrap: wrap;
+ }
+
+ .col {
+     max-width: 400px;
+     margin: 15px;
+ }
+
+ .animeImage {
+     border-radius: 10px;
+     height: auto;
+     height: 80%;
+     background-color: white;
+ }
+
+ .animeDetails {
+     font-size: 1.5 rem;
+ }
+
+ .firstItem {
+     margin-top: 0;
+ }

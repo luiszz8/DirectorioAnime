@@ -1,0 +1,21 @@
+.animeCard {
+ list-style: none;
+ font-size: 1.5 rem;
+ text-align: center;
+}
+
+.animeCard:hover{
+    opacity: 0.8;
+}
+
+.animeI {
+    border-radius: 20px;
+    background-color: white;
+}
+
+@media (max-width: 560px) {
+    .animeI{
+        width: 90%;   
+        height: auto;
+    }
+}
