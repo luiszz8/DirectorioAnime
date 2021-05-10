@@ -2,12 +2,14 @@ import { AnimeCard } from "./AnimeCard";
 import style from "./AnimesGrid.module.css";
 import { useEffect} from "react";
 import { useState } from "react";
+import { Spinner } from "./Spinner";
 
 
 export function AnimesCompletedGrid({estado}){
     
     const [animesL,setAnimes] = useState([]);
     const [currentPage,setCurrentPage] = useState(0);
+    const [isLoading,setIsLoading] = useState(true);
 
     const filteredAnimes = () => {
         return animesL.slice(currentPage,currentPage+8);
@@ -28,10 +30,16 @@ export function AnimesCompletedGrid({estado}){
     }   
 
     useEffect(()=>{
+        setIsLoading(true);
         fetch("https://api.jikan.moe/v3/user/Luizzz8/animelist/"+estado).then(result => result.json()).then(data=>{
+            setIsLoading(false);
             setAnimes(data.anime);
         });
     },[estado]);
+
+    if (isLoading) {
+        return <Spinner/>
+    }
     if (!animesL) {
         return null;
     }

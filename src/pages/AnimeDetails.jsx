@@ -1,17 +1,25 @@
 import { useState } from "react";
 import { useEffect} from "react";
 import { useParams } from "react-router";
+import { Spinner } from "../components/Spinner";
 import style from "./AnimeDetails.module.css";
 
 export function AnimeDetails(){
     const {animeId} = useParams();
     const [animeD,setAnime] = useState([]); 
+    const [isLoading,setIsLoading] = useState(true);
     
     useEffect(()=>{
+        setIsLoading(true);
         fetch("https://api.jikan.moe/v3/anime/"+animeId).then(result => result.json()).then(data=>{
+            setIsLoading(false);
             setAnime(data);
         });
     },[animeId]);
+
+    if (isLoading) {
+        return <Spinner/>
+    }
 
     if (!animeD.genres) {
         return null;
