@@ -63,3 +63,7 @@
 .estiloBoton:focus {
     outline: none;
 }
+
+.estiloBoton:active {
+    outline: none;
+}
