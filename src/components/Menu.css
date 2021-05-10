@@ -48,10 +48,10 @@ header {
   .menu {
     background: gray;
     width: 99.5%;
-    height: 10rem;
+    height: 12rem;
     position: fixed;
     z-index: 9;
-    top: -13rem;
+    top: -14.5rem;
     display: flex;
     flex-direction: column;
     justify-content: space-around;

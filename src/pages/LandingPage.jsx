@@ -1,9 +1,13 @@
 import { AnimesGrid } from "../components/AnimesGrid";
 import { Estado } from "../components/Estado";
+import { GridTopAnime } from "../components/GridTopAnime";
 
 export function LandingPage(){
     return(
         <div>
+            <section id="top"/>
+                <Estado texto={"Anime Top"}/>
+                <GridTopAnime/>
             <section id="watching"/>
                 <Estado texto={"Watching"}/>
                 <AnimesGrid estado={"watching"}/>

@@ -20,6 +20,7 @@ export function Menu(){
             </header>
                 <nav className="menu">
                 <ul>
+                    <li className={style.etiquetaLi}><Ancla className={style.etiquetaA} to="top" smooth={true} duration={1000} onClick={cerrar}>Anime Top</Ancla> </li>
                     <li className={style.etiquetaLi}><Ancla className={style.etiquetaA} to="watching" smooth={true} duration={1000} onClick={cerrar}>Watching</Ancla> </li>
                     <li className={style.etiquetaLi}><Ancla className={style.etiquetaA} to="plan" smooth={true} duration={1000} onClick={cerrar}>Plan To Watch</Ancla> </li>
                     <li className={style.etiquetaLi}><Ancla className={style.etiquetaA} to="onhold" smooth={true} duration={1000} onClick={cerrar}>On Hold</Ancla> </li>
