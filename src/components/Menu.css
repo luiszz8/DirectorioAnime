@@ -47,7 +47,7 @@ header {
   }
   .menu {
     background: gray;
-    width: 100%;
+    width: 99.5%;
     height: 10rem;
     position: fixed;
     z-index: 9;
@@ -80,6 +80,9 @@ header {
 
   @media only screen and (max-width: 560px) {
     .header-container {
-        width: 97.5%;
+        width: 99.7%;
+    }
+    .menu {
+      width: 99%;
     }
   }

@@ -46,6 +46,7 @@ export function AnimesCompletedGrid({estado}){
                 <button className={style.estiloBoton} onClick={previusPage}>Previus</button>
                 <button className={style.estiloBoton} onClick={nextPage}>Next</button>
             </div>
+            <br />
         </>
     );
 }

@@ -59,3 +59,7 @@
     color: gray;
     background-color: #ffffff;
 }
+
+.estiloBoton:focus {
+    outline: none;
+}
